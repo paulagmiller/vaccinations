@@ -1,0 +1,289 @@
+archetype (adl_version=1.4; uid=eb1ca832-29ba-4db2-a6fa-d3ef778600b5)
+	openEHR-EHR-ACTION.nds_immunisation_course.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-08-13">
+		["name"] = <"Dr Paul Miller">
+		["organisation"] = <"NES Digital Service">
+		["email"] = <"paul.miller@nes.scot.nhs.uk">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"89ef9b53f4d854d0176a30ee0ea1e67b">
+		["build_uid"] = <"7db3f636-4c13-3c06-973e-a4f05ad52741">
+	>
+
+definition
+	ACTION[at0000] matches {    -- NDS_Immunisation_Course
+		ism_transition matches {
+			ISM_TRANSITION[at0003] matches {    -- Immunisation course planned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::526]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Immunisation course planned
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0004] matches {    -- Immunisation course scheduled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::529]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0004]    -- Immunisation course scheduled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0005] matches {    -- Immunisation course postponed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::527]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0005]    -- Immunisation course postponed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0006] matches {    -- Immunisation course cancelled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0006]    -- Immunisation course cancelled
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0007] matches {    -- Immunisation course suspended
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0007]    -- Immunisation course suspended
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0008] matches {    -- Immunisation course active
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0008]    -- Immunisation course active
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0009] matches {    -- Immunisation course complete
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0009]    -- Immunisation course complete
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Course name
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Course description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Indication
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Risks and warnings
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Agreement
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Sequence number
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Sequence description
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Due date
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0002] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.nds_immunisation_protocol\.v0/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"NDS_Immunisation_Course">
+					description = <"NDS_Immunisation_Course">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Immunisation course planned">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Immunisation course scheduled">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Immunisation course postponed">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Immunisation course cancelled">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Immunisation course suspended">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Immunisation course active">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Immunisation course complete">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Indication">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Course name">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Course description">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Sequence number">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Sequence description">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Due date">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Risks and warnings">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Agreement">
+					description = <"">
+				>
+			>
+		>
+	>
