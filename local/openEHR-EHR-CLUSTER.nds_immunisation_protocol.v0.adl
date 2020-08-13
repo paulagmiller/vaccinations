@@ -26,19 +26,29 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6b93d3ef6af66c62299168b8d3c85629">
+		["MD5-CAM-1.0.1"] = <"a8f4dd284847e4b35b7c728f6a57dfbe">
 		["build_uid"] = <"4723c5e4-f683-32a0-aac2-ffeacb32f614">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- NDS_Immunisation_Protocol
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Target Disease
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Immunisation name
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Protocol Procedure
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Target disease
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Procedure term
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Subject agreement to immunisation
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -55,11 +65,19 @@ ontology
 					description = <"NDS_Immunisation_Protocol">
 				>
 				["at0001"] = <
-					text = <"Target Disease">
+					text = <"Target disease">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Protocol Procedure">
+					text = <"Procedure term">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Immunisation name">
+					description = <"Local name or description for the immunisation e.g 'Influenza' 'Hepatitis A/B' 'Hepatitis A and Typhoid'">
+				>
+				["at0004"] = <
+					text = <"Subject agreement to immunisation">
 					description = <"">
 				>
 			>
