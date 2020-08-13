@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "CF14C5C491FE8A7F34E0169DEAF03F9E",
-      "MD5-CAM-1.0.1" : "8a759938483340a17907b0e14124d565"
+      "MD5-CAM-1.0.1" : "5ab51f5e4e0e446405ef86b2bdca4052"
     },
     "details" : {
       "en" : {
@@ -750,19 +750,19 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Immunisation course cancelled",
-            "description" : "T"
+            "description" : "The immunisation course has been cancelled"
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Immunisation course suspended",
-            "description" : "T"
+            "description" : "The immunisation course has been suspended"
           },
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Immunisation course complete",
-            "description" : "T"
+            "description" : "The immunisation course is complete"
           },
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
