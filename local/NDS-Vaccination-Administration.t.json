@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "44D94C2952391723BB72523E4132FF1C",
-      "MD5-CAM-1.0.1" : "93428b6d6e560526c4e9420d14efbee9"
+      "MD5-CAM-1.0.1" : "c513e2f1430f3359a21d4b29c7fdd33b"
     },
     "details" : {
       "de" : {
@@ -809,54 +809,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
-          "nodeId" : "at0012.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "current_state",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "528" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          }, {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "careflow_step",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0012" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ISM_TRANSITION",
           "occurrences" : "0..0",
           "nodeId" : "at0150.1",
           "attributes" : [ {
@@ -1150,6 +1102,54 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0012.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0012" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
           "occurrences" : "0..0",
           "nodeId" : "at0010.1",
           "attributes" : [ {
@@ -1190,6 +1190,54 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0010" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0006" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1386,54 +1434,6 @@
                     "value" : "local"
                   },
                   "constraint" : [ "at0005" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ISM_TRANSITION",
-          "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "current_state",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "245" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          }, {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "careflow_step",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "CODE_PHRASE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "at0006" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2140,7 +2140,29 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0025.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "constraint" : [ {
+                        "lowerIncluded" : false,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : true,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
@@ -2257,7 +2279,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0109.1",
             "text" : "Vaccination Due",
-            "description" : "The medication has been recommended but no steps have been taken to initiate prescribing."
+            "description" : "The vaccines has been recommended but no steps have been taken to initiate administration."
           },
           "at0020.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2276,49 +2298,63 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
             "text" : "Stage",
-            "description" : "The sequence number specific to the pathway step being recorded."
+            "description" : "The sequence number specific to this vaccination in the immunisation course"
           },
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0012.1",
             "text" : "Vaccination cancelled",
-            "description" : "The planned course of medication has been cancelled prior to any administration."
+            "description" : "The vaccination was cancelled"
           },
           "at0016.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016.1",
             "text" : "Vaccination scheduled",
-            "description" : "The time to start the medication, or other starting condition, has been set."
+            "description" : "The vaccination has been scheduled\n"
           },
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Vaccination completed",
-            "description" : "The medication course has been completed as planned."
+            "description" : "The vaccination has been completed.\n"
           },
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Vaccine administration suspended",
-            "description" : "The administration of the medication has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. When setting the date/conditions for restart after suspending, a step from ‘Administrations suspended’ and back to 'Medication start date/condition set' should be performed."
+            "description" : "The administration of the vaccine has been suspended until further notice. No further doses should be given until the restart date or conditions have been met. "
           },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Vaccine administered",
-            "description" : "A single administration of the medication has taken place."
+            "description" : "A single administration of the vaccine has taken place."
           },
           "at0018.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0018.1",
             "text" : "Vaccine administration omitted",
-            "description" : "An administration of the medication has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
+            "description" : "An administration of the vaccine has been withheld and not given. There is no expectation that it will be given later, though the next dose (if any) should be administered according to the original order."
           },
           "at0044.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0044.1",
             "text" : "Vaccine administration deferred",
-            "description" : "An administration of a dose of the medication has been delayed but is expected to be given as soon as possible."
+            "description" : "An administration of a dose of the vaccine has been delayed but is expected to be given in the future\n"
+          },
+          "at0147.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0147",
+            "text" : "Route",
+            "description" : "The route by which the ordered item was, or is to be, administered into the subject's body.",
+            "comment" : "Probably a value set of IM, SC, Nasal but may be others\n"
+          },
+          "at0141.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0141",
+            "text" : "Body site",
+            "description" : "Structured description of the site of administration of the ordered item.",
+            "comment" : "Provide a list of sites and include 'other' for unusual things"
           }
         },
         "nb" : {
@@ -2643,6 +2679,12 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0151.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "occurrences" : "0..1",
           "nodeId" : "at0150.1",
           "attributes" : [ {
@@ -2882,6 +2924,33 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0151" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0151",
+            "text" : "Manufacturer",
+            "description" : "The manufacturer of the vaccine",
+            "comment" : "For example: 'Abbott'."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132",
+            "text" : "Name",
+            "description" : "The name of the vaccine",
+            "comment" : "Should be a dm+d VMP descriptor e.g. \"Influenza vaccine (live attenuated) nasal suspension 0.2ml unit dose\""
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Expiry",
+            "description" : "The expiry date and/or time of the vaccine"
+          },
+          "at0151.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0151.1",
+            "text" : "Manufacturer",
+            "description" : "The manufacturer of the v",
+            "comment" : "For example: 'Abbott'."
           }
         },
         "nb" : {
@@ -3176,7 +3245,7 @@
               "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "upper",
+                "rmAttributeName" : "lower",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
@@ -3226,7 +3295,7 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "lower",
+                "rmAttributeName" : "upper",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
@@ -3652,7 +3721,22 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0145.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0145",
+            "text" : "Dose unit",
+            "description" : "The unit which is associated with the Dose amount.",
+            "comment" : "For example: 'ml'"
+          },
+          "at0144.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0144",
+            "text" : "Dose amount",
+            "description" : "The amount of vaccine administered",
+            "comment" : "For example: 1, 1.5, 0.125 or 1-2, 12.5-20.5"
+          }
+        },
         "nb" : { },
         "pt-br" : { },
         "de" : { }
@@ -3760,7 +3844,25 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
@@ -3777,6 +3879,44 @@
             "code" : "at0002.1",
             "text" : "Procedure term",
             "description" : "use the SNOMED CT description here for the vaccination procedure, e.g. 871751000000104 |Administration of first intranasal influenza vaccination (procedure)|"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Target disease",
+            "description" : "The disease(s) that this vaccine aims to provide immunity to. ",
+            "comment" : "Should be SNOMED CT list but can be managed bespoke for small numbers of conditions"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Immunisation name",
+            "description" : "A common name or description for the immunisation e.g 'Influenza' 'Hepatitis A/B' 'Hepatitis A and Typhoid'"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Subject agreement to immunisation",
+            "description" : "The subject's agreement to have the vaccination.",
+            "comment" : "Needs elaborated."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Immunisation name",
+            "description" : "H name or description for the immunisation e.g 'Influenza' 'Hepatitis A/B' 'Hepatitis A and Typhoid'"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Target disease",
+            "description" : "T"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Subject agreement to immunisation",
+            "description" : "T"
           }
         }
       },
