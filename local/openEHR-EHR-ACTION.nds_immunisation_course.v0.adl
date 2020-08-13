@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"89ef9b53f4d854d0176a30ee0ea1e67b">
+		["MD5-CAM-1.0.1"] = <"a5b347578b43f00b6a7a456ae6548c5c">
 		["build_uid"] = <"7db3f636-4c13-3c06-973e-a4f05ad52741">
 	>
 
@@ -169,9 +169,14 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Agreement
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Subject agreement to course
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Stage
+						value matches {
+							DV_ORDINAL matches {*}
 						}
 					}
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Sequence number
@@ -281,7 +286,11 @@ ontology
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"Agreement">
+					text = <"Subject agreement to course">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Stage">
 					description = <"">
 				>
 			>
