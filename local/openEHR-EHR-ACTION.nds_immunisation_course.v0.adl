@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a5b347578b43f00b6a7a456ae6548c5c">
+		["MD5-CAM-1.0.1"] = <"0c307042b9b58c5d7531804f452181af">
 		["build_uid"] = <"7db3f636-4c13-3c06-973e-a4f05ad52741">
 	>
 
@@ -194,6 +194,11 @@ definition
 							DV_DATE matches {*}
 						}
 					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 				}
 			}
 		}
@@ -291,6 +296,10 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Stage">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Comment">
 					description = <"">
 				>
 			>
