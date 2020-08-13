@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "44D94C2952391723BB72523E4132FF1C",
-      "MD5-CAM-1.0.1" : "c513e2f1430f3359a21d4b29c7fdd33b"
+      "MD5-CAM-1.0.1" : "5607afc090752a22d66e7049c09f820e"
     },
     "details" : {
       "de" : {
@@ -3910,13 +3910,15 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Target disease",
-            "description" : "T"
+            "description" : "The disease that this vaccine aims to provide immunity to.",
+            "comment" : "Should be a SNOMED CT valueset, can be handcrafted for small numbers"
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
             "text" : "Subject agreement to immunisation",
-            "description" : "T"
+            "description" : "The subject's agreement to this vaccination.",
+            "comment" : "Needs elaborated"
           }
         }
       },
