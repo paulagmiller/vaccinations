@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="openEHR/v1/Template">
+    <id>5ee5e407-22e6-4592-8096-135725cdc2b3</id>
+    <name>NDS-Immunisation-Summary</name>
+    <description>
+        <original_author>
+            <item>
+                <key>date</key>
+                <value>2020-08-13</value>
+            </item>
+            <item>
+                <key>name</key>
+                <value>Dr Paul Miller</value>
+            </item>
+            <item>
+                <key>organisation</key>
+                <value>NES Digital Service</value>
+            </item>
+            <item>
+                <key>email</key>
+                <value>paul.miller@nes.scot.nhs.uk</value>
+            </item>
+        </original_author>
+        <lifecycle_state>unmanaged</lifecycle_state>
+        <details/>
+        <other_details>
+            <item>
+                <key>licence</key>
+                <value/>
+            </item>
+            <item>
+                <key>custodian_organisation</key>
+                <value/>
+            </item>
+            <item>
+                <key>original_namespace</key>
+                <value/>
+            </item>
+            <item>
+                <key>original_publisher</key>
+                <value/>
+            </item>
+            <item>
+                <key>custodian_namespace</key>
+                <value/>
+            </item>
+            <item>
+                <key>PARENT:MD5-CAM-1.0.1</key>
+                <value>CF14C5C491FE8A7F34E0169DEAF03F9E</value>
+            </item>
+            <item>
+                <key>MD5-CAM-1.0.1</key>
+                <value>95037293634ece044fcb6485ba020a23</value>
+            </item>
+            <item>
+                <key>original_language</key>
+                <value>ISO_639-1::en</value>
+            </item>
+        </other_details>
+    </description>
+    <definition
+        archetype_id="openEHR-EHR-COMPOSITION.immunisation_list.v0"
+        concept_name="Immunisation list" name="NDS-Immunisation-Summary"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:COMPOSITION">
+        <Content
+            archetype_id="openEHR-EHR-ACTION.nds_immunisation_course.v0"
+            path="/content" xsi:type="tem:ACTION">
+            <Rule name="Immunisation course in progress" path="/ism_transition[at0008]"/>
+            <Rule name="Subject Agreement" path="/description[at0001]/items[at0022]"/>
+            <Rule max="0" path="/description[at0001]/items[at0023]"/>
+        </Content>
+    </definition>
+    <integrity_checks
+        archetype_id="openEHR-EHR-COMPOSITION.immunisation_list.v0"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">CF14C5C491FE8A7F34E0169DEAF03F9E</digest>
+    </integrity_checks>
+    <integrity_checks
+        archetype_id="openEHR-EHR-ACTION.nds_immunisation_course.v0"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">EC52AE6C938050A5CFFD5E434A4AB18F</digest>
+    </integrity_checks>
+</template>
