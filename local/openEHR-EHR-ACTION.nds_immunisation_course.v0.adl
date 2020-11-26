@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=eb1ca832-29ba-4db2-a6fa-d3ef778600b5)
+archetype (adl_version=1.4; uid=1f500509-79a6-493f-9c9f-56773616805e)
 	openEHR-EHR-ACTION.nds_immunisation_course.v0
 
 concept
@@ -14,20 +14,24 @@ description
 		["organisation"] = <"NES Digital Service">
 		["email"] = <"paul.miller@nes.scot.nhs.uk">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"For managing immunisation schedules type of immunisation and stage of the course etc.">
+			keywords = <"Immunisation,vaccination, vaccine, schedule", ...>
+			copyright = <"© Apperta Foundation">
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e491228f6e613af343a2b33640fad458">
-		["build_uid"] = <"7db3f636-4c13-3c06-973e-a4f05ad52741">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"EC52AE6C938050A5CFFD5E434A4AB18F">
+		["build_uid"] = <"d723c329-67b4-4973-a9de-87565113354d">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -222,7 +226,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"NDS_Immunisation_Course">
-					description = <"NDS_Immunisation_Course">
+					description = <"NDS_Immunisation_Course, archetype for managing immunisation courses and schedules.">
 				>
 				["at0001"] = <
 					text = <"Item tree">
